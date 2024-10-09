@@ -13,7 +13,7 @@ jobs:
               run: sudo apt-get install cowsay -y
 
             - name: Execute CowSay CMD
-              run: cowsay - dragon "Run for cover, I'm a DRAGON....RAWE" >> gragon.txt
+              run: cowsay -f dragon "Run for cover, I'm a DRAGON....RAWE" >> gragon.txt
             
             - name: Test File exists
               run: grep -i "dragon" gragon.txt
