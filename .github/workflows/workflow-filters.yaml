@@ -3,9 +3,9 @@ name: Workflow filters
 on:
     workflow_dispatch: 
     push:
-        branches-ignore: 
-            - feature/*
-            - test/**
+        # branches-ignore: 
+        #     - feature/*
+        #     - test/**
         branches: 
             - main
             - '!feature/*' #Ignore workflow run when pushing to any branch name starting with feature
